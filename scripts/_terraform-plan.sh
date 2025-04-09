@@ -2,7 +2,7 @@ status=1
 
 cd terraform
 
-terraform plan 
+terraform plan
 
 status="${?}";
 
