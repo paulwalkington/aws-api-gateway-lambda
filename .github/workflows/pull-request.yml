@@ -32,6 +32,9 @@ jobs:
         with:
           terraform_version: 1.7.0
 
+      - name: Terraform init
+        run: terraform init
+
       - name: Terraform plan
         run: bash scripts/_terraform-plan.sh
 
