@@ -27,6 +27,11 @@ jobs:
 
       - uses: ./.github/actions/setup-terraform
 
+      - name: Terraform init
+        run: |
+          cd terraform
+          terraform init
+
       - name: Terraform plan
         run: bash scripts/_terraform-plan.sh
 
