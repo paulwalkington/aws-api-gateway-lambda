@@ -2,7 +2,7 @@ status=1
 
 cd terraform
 
-terraform plan -detailed-exitcode
+terraform plan 
 
 status="${?}";
 
