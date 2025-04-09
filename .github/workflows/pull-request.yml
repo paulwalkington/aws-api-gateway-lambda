@@ -25,7 +25,7 @@ jobs:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN_DEV }}
           aws-region: eu-west-2
 
-      - uses: ./.github/actions/setup-terraform
+      # - uses: ./.github/actions/setup-terraform
 
       - name: Install Terraform
         uses: hashicorp/setup-terraform@v2.0.0

@@ -10,7 +10,7 @@ resource "aws_lambda_function" "example" {
 }
 
 resource "aws_iam_role" "lambda_role" {
-  name = "lambda-role"
+  name = "lambdaRole"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17",
@@ -44,6 +44,6 @@ resource "aws_lambda_permission" "apigw" {
 
 data "archive_file" "lambda_package" {
   type        = "zip"
-  source_file = "../src/index.js"
+  source_file = "src/index.js"
   output_path = "index.zip"
 }
